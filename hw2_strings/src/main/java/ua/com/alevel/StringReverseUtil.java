@@ -1,6 +1,7 @@
 package ua.com.alevel;
 
 public class StringReverseUtil {
+
   private static String reversedString = "";
 
   public static String reverse(String text) { /**Reverse all string*/

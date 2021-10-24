@@ -7,6 +7,7 @@ import ua.com.alevel.tasks.Task3;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         System.out.println("1. Parsing string and getting the sum of all numbers");
         System.out.println("2. Parsing string and getting the count of each letter");

@@ -3,6 +3,7 @@ package ua.com.alevel.tasks;
 import java.util.Scanner;
 
 public class Task1 {
+
     public void task1SumOfNumbers() {
         int sum = 0;
         System.out.println("Input string");

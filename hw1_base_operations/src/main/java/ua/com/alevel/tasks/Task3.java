@@ -3,6 +3,7 @@ package ua.com.alevel.tasks;
 import java.util.Scanner;
 
 public class Task3 {
+
     public void task3LessonsTimetable() {
         int lessonCounter, lessonEndHour, lessonEndMinute;
         int lessonDuration = 45;
