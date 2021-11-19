@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class SquareOfTriangle {
 
-    public static void squareTriangle() {
+    public static void run() {
         double x1, y1, x2, y2, x3, y3;
         System.out.println("Введите вершину А(x1,y1)");
         System.out.print("x1: ");
@@ -28,8 +28,7 @@ public class SquareOfTriangle {
 
         double square = (double) calculateSquareOfTriangle(x1, y1, x2, y2, x3, y3);
         String formattedSquare = String.format("%.2f", square).replace(',', '.');
-
-        System.out.println("Площадь треугольника ABC - " + formattedSquare);
+        if (square != 0.0) System.out.println("Площадь треугольника ABC - " + formattedSquare);
     }
 
     private static Object calculateSquareOfTriangle(double x1, double y1, double x2, double y2, double x3, double y3) {

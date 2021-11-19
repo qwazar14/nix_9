@@ -1,11 +1,12 @@
 package ua.com.alevel.level1;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class UniqueArray {
 
-    public static void parseStringToArr() {
+    public static void run() {
         int arrSize = 0;
 
         String userInput = getUserInput();
@@ -23,7 +24,6 @@ public class UniqueArray {
     private static String getUserInput() {
         String userInput = "";
         System.out.println("Введите строку (в формате - 1 4 5 1 1 3):");
-
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             userInput = reader.readLine();

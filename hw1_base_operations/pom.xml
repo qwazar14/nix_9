@@ -23,7 +23,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ua.com.alevel.Main</mainClass>
+                            <mainClass>ua.com.alevel.Module1</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

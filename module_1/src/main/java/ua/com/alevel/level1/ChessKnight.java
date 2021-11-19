@@ -8,7 +8,7 @@ import static java.lang.Math.abs;
 
 public class ChessKnight {
 
-    public static String generateBoard() {
+    private static String generateBoard() {
         String brdStr = "";
         brdStr += "  a b c d e f g h\n";
         for (int r = 0; r < 8; r++) {
@@ -21,7 +21,7 @@ public class ChessKnight {
         return brdStr;
     }
 
-    public static void getUserInput() {
+    public static void run() {
 
         int userInputX = 0;
         int userInputY = 0;
