@@ -34,11 +34,11 @@ public class Item extends BaseEntity {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "Item{" +
                 "id='" + super.getId() + '\'' +
                 ", name='" + name + '\'' +
                 ", price=" + price +
-                ", shop=" + getCategory().getName() +
+                ", category=" + getCategory().getName() +
                 '}';
     }
 }
