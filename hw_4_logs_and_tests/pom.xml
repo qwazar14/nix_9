@@ -107,7 +107,7 @@
     </dependencies>
 
     <build>
-        <finalName>logs_tests</finalName>
+        <finalName>hw_4_logs_and_tests</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -157,7 +157,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>ua.com.alevel.IoNioMain</mainClass>
+                                    <mainClass>ua.com.alevel.HW4TestsAndLogs</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
