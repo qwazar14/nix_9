@@ -2,3 +2,5 @@
 *.idea
 /target/
 *.class
+*.gz
+*.log
