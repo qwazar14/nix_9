@@ -1,6 +1,7 @@
 *.iml
 *.idea
-/target/
+*/target/
 *.class
 *.gz
 *.log
+*.lst
