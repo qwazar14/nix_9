@@ -17,6 +17,8 @@
         <module>math_set</module>
         <module>hw_5_collections</module>
         <module>hw_6_exception</module>
+        <module>module_2</module>
+        <module>hw_7_ionio</module>
     </modules>
 
     <properties>
