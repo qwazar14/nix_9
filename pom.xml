@@ -16,6 +16,7 @@
         <module>hw_4_logs_and_tests</module>
         <module>math_set</module>
         <module>hw_5_collections</module>
+        <module>hw_6_exception</module>
     </modules>
 
     <properties>
