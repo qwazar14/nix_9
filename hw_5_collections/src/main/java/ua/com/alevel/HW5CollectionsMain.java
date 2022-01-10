@@ -1,8 +1,11 @@
 package ua.com.alevel;
 
-public class HW5CollectionsMain {
-    public static void main(String[] args) {
+import java.io.IOException;
 
-        new Controller().run();
+public class HW5CollectionsMain {
+    public static void main(String[] args) throws IOException {
+        MathSetController mathSet = new MathSetController();
+        mathSet.run();
     }
 }
+
