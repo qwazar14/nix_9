@@ -1,7 +1,9 @@
 package ua.com.alevel;
 
+import ua.com.alevel.controller.impl.DBControllerImpl;
+
 public class HW7IoNioMain {
     public static void main(String[] args) {
-        System.out.println("SOON");
+        new DBControllerImpl().run();
     }
 }
