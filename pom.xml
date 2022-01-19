@@ -20,6 +20,7 @@
         <module>module_2</module>
         <module>hw_7_ionio</module>
         <module>json_helper</module>
+        <module>hw_8_jdbc</module>
     </modules>
 
     <properties>
