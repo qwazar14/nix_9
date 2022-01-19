@@ -11,13 +11,13 @@ public class CitiesController {
 
     public static void run() {
 
-        BufferedReader bufferedReader;
+        BufferedReader reader;
         List<City> cities = new ArrayList<>();
         try {
-            bufferedReader = new BufferedReader(new FileReader(pathInput));
+            reader = new BufferedReader(new FileReader(pathInput));
             int numOfCities = 0;
-            if (bufferedReader.ready()) {
-                numOfCities = Integer.parseInt(bufferedReader.readLine());
+            if (reader.ready()) {
+                numOfCities = Integer.parseInt(reader.readLine());
                 if (numOfCities > 1000) {
                     System.out.println("Too big number of cities");
                     System.exit(0);
@@ -29,21 +29,21 @@ public class CitiesController {
             for (int k = 1; k <= numOfCities; k++) {
                 City city = new City();
                 city.setId(k);
-                city.setName(bufferedReader.readLine());
-                int numOfNeighbors = Integer.parseInt(bufferedReader.readLine());
+                city.setName(reader.readLine());
+                int numOfNeighbors = Integer.parseInt(reader.readLine());
                 city.setNumOfNeighbors(numOfNeighbors);
                 for (int i = 0; i < numOfNeighbors; i++) {
-                    getMap(bufferedReader, city);
+                    getMap(reader, city);
                 }
                 city.setNeighborsIds(getList(city));
                 cities.add(city);
             }
-            int numOfPaths = Integer.parseInt(bufferedReader.readLine());
+            int numOfPaths = Integer.parseInt(reader.readLine());
             for (int l = 0; l < numOfPaths; l++) {
                 String[] destination = new String[2];
                 int indexOfStartEnd = 0, indexOfNameCityEnd = 0;
-                if (bufferedReader.ready()) {
-                    String str = bufferedReader.readLine();
+                if (reader.ready()) {
+                    String str = reader.readLine();
                     for (int i = 0; i < str.length(); i++) {
                         if (Character.isLetter(str.charAt(i))) {
                             destination[indexOfStartEnd] = String.valueOf(str.charAt(i));
